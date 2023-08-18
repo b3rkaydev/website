@@ -1,0 +1,151 @@
+.home {
+    background: url(/bg.png) fixed center center no-repeat;
+    background-size: cover;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:24px;
+}
+
+#pfp {
+    position: relative;
+}
+  
+.home span img {
+    width: 136px;
+    height: 136px;
+    border-radius: 100%;
+    position: relative;
+    outline-offset: 6px;
+    outline:5px solid #22a55b;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes text {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+.home div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    text-align: center;
+    gap:6px;
+}
+
+.home div h1 {
+    font-size:52px;
+    font-weight: 900;
+}
+
+.home div h3 {
+    position: relative;
+    left: 2px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:3px;
+    position: relative;
+    left: 2px;
+}
+
+#links a img {
+    width: 18px;
+    height: 18px;
+}
+
+#links a {
+    padding:2px;
+    transition: 200ms all;
+    position: relative;
+}
+
+#links a:hover::before {
+    content: "👆";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: arrow 500ms infinite ease-in;
+}
+
+@keyframes arrow {
+    0%,100% {
+        top: 28px;
+    }
+    50% {
+        top: 24px;
+    }
+}
+
+.home button {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    margin-bottom:24px;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: 0;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    transition: 200ms all;
+    cursor: default;
+    opacity: 0.2;
+    position: none;
+}
+
+@keyframes sd {
+    0%,100% {
+        transform: translate(-50%,64%);
+    }
+    50% {
+        transform: translate(-50%,-60%);
+    }
+}
+
+.home button img {
+    width:24px;
+    height:24px;
+    position: relative;
+}
+
+.home button div span {
+    width: 3px;
+    height: 5px;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,60%);
+    background: white;
+    animation: 1600ms infinite sd;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .home {
+        flex-direction: row;
+        gap:32px;
+    }
+}
+
+

@@ -1,0 +1,173 @@
+.about {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    margin: auto;
+}
+
+/* .about h1 {
+    font-size: 38px;
+    font-weight: 900;
+    background: linear-gradient(326deg, rgba(245,25,238,1) 35%, rgba(50,1,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+} 
+
+
+.about div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    line-height: 26px;
+    gap:6px;
+}
+
+.about div:nth-child(1) h2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: start;
+    gap:6px;
+} 
+
+.about div:nth-child(1) span {
+    font-size: 32px;
+}
+
+*/
+
+.about .container {
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 12px;
+}
+
+.about-top {
+    display: flex;flex-direction: column-reverse;
+}
+
+.cat {
+    margin-bottom: 24px;
+    width: 125px;
+    height: 125px;
+}
+
+.about-top div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+    gap:16px;
+    max-width:550px;
+    text-align: center;
+
+}
+
+
+.about-top div:nth-child(1) h2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap:6px;
+    font-size: 20px;
+} 
+.about-top div:nth-child(1) span {
+    font-size: 26px;
+} 
+
+.about-bottom {
+    width: 100%;
+}
+
+#skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:6px;
+}
+
+#skills img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .about .container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-top {
+        display: flex;flex-direction: row;justify-content: space-between;width: 100%;
+    }
+    .about .container {
+        width: 75vw;
+    }
+    .cat {
+        margin-bottom: 0;
+        width: 135px;
+        height: 135px;
+    }
+
+    .about-top div:nth-child(1) {
+        align-items: start;
+        text-align: left;
+
+    }
+    .about-top div:nth-child(1) h2 {
+        gap:6px;
+        font-size: 24px;
+        align-items: start;
+    } 
+    .about-top div:nth-child(1) span {
+        font-size: 32px;
+    } 
+    #skills {
+        justify-content: start;
+        align-items: center;
+        gap:8px;
+    }
+    #skills img {
+        width: 30px;
+        height: 30px;
+    }    
+    .cards {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 9px;
+        grid-row-gap: 9px;
+    }
+    
+}
+
+@media only screen and (min-width: 1920px) {
+    .about .container {
+        width: 42.5vw;
+    }
+}
